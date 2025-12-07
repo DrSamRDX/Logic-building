@@ -3,12 +3,23 @@
 int main()
 {
 
-    float circumference;
-    int radii;
-    printf("Enter the radii : ");
-    scanf("%d", &radii);
-    circumference = 2 * 3.14 * radii;
-    printf("The circumference is : %.2f", circumference);
+    int rows;
+    printf("Enter the rows : ");
+    scanf("%d", &rows);
+
+    for (int i = 1; i <= rows; i++)
+    {
+        for (int s = 1; s <= rows - i; s++)
+            printf(" ");
+
+        for (int j = 1; j <= i; j++)
+            printf("%d", j);
+
+        for (int j = i - 1; j >= 1; j--)
+            printf("%d", j);
+
+        printf("\n");
+    }
 
     return 0;
 }

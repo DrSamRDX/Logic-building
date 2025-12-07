@@ -1,13 +1,19 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
+int main()
+{
 
-    char ch;
-    printf("Enter the character : ");
-    scanf("%c", &ch);
+    int rows;
+    printf("Enter the rows : ");
+    scanf("%d", &rows);
 
-    printf("The ASCII value of \"%c\" is %d", ch, ch);
+    char c = 'A';
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j <= i; j++)
+            printf("%c", c++);
+        printf("\n");
+    }
 
-return 0;
-
+    return 0;
 }

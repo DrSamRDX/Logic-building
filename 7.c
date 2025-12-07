@@ -1,15 +1,19 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
+int main()
+{
 
-    int num;
-    int divi;
-    printf("Enter the value of num : ");
-    scanf("%d", &num);
+    int rows;
+    printf("Enter the rows : ");
+    scanf("%d", &rows);
 
-    divi = num/(-5);
-    printf("Value after negative divisibility test is : %d", divi);
+    char c = 'A';
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < rows; j++)
+            printf("%c", 'A' + j);
+        printf("\n");
+    }
 
-return 0;
-
+    return 0;
 }

@@ -1,15 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
+int main()
+{
 
-    int x = 10;
-    int y = 20;
-    
-    y -= x;
-    x += y;
-    printf("The value of x after swapping is : %d\n", x);
-    printf("The value of x after swapping is : %d", y);
+    int rows;
+    printf("Enter the rows : ");
+    scanf("%d", &rows);
 
-return 0;
+    for (int i = rows; i > 0; i--)
+    {
+        for (int j = 1; j <= i; j++)
+            printf("%d", j);
+        printf("\n");
+    }
 
+    return 0;
 }
